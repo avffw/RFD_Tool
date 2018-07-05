@@ -1,0 +1,73 @@
+
+// Font size mixins
+
+@mixin headline {
+	font-size: 28px;
+	line-height: 36px;
+	font-weight: 400;
+	@media only screen and (max-width: $mobile) {
+		font-size: 24px;
+		line-height: 28px;
+	}
+}
+
+@mixin subHeadline {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
+	@media only screen and (max-width: $mobile) {
+		font-size: 20px;
+		line-height: 24px;
+	}
+}
+
+@mixin paragraph {
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 500;
+	@media only screen and (max-width: $mobile) {
+		font-size: 18px;
+		line-height: 24px;
+	}
+}
+
+
+@mixin smallParagraph {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+	@media only screen and (max-width: $mobile) {
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
+
+@mixin smallText {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 500;
+	@media only screen and (max-width: $mobile) {
+		font-size: 12px;
+		line-height: 16px;
+	}
+}
+
+
+// Base typography rules
+
+html, body, input, textarea, button {
+	@include paragraph;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: $font;
+	color: $grey;
+	text-align: left;
+}
+
+strong {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+}

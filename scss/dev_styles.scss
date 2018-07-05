@@ -1,0 +1,32 @@
+@import 'styles';
+
+.layout--dev {
+
+	header {
+		@include columns(1);
+		margin-top: 40px;
+		img {
+
+		}
+		h1 {		
+			@include headline;
+		}
+	}
+	
+	h3 {
+		@include columns(1);
+		@include subHeadline;
+		margin-top: 80px;
+	}
+
+	ul {
+		li {
+			@include columns(3);
+			margin-top: 40px;
+			a {
+				
+			}
+		}
+	}
+
+}

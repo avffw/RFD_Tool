@@ -1,0 +1,56 @@
+{
+  "tables": [
+    {
+      "rdf":{}
+    }
+  ],
+
+  "rfdForm":{
+    "inputGroups":[
+      {
+        "label":"System Name",
+        "placeholder":"System Name",
+        "class":"systemName",
+        "name":"systemName"
+      },
+      {
+        "label":"Date and time of execution",
+        "placeholder":"System Name",
+        "class":"systemName",
+        "name":"systemName"
+      },
+      {
+        "label":"Downtime of the system",
+        "placeholder":"System Name",
+        "class":"systemName",
+        "name":"systemName"
+      },
+      {
+        "label":"Coordinator",
+        "placeholder":"System Name",
+        "class":"systemName",
+        "name":"systemName"
+      },
+      {
+        "label":"Cohaesio Staff",
+        "placeholder":"System Name",
+        "class":"systemName",
+        "name":"systemName"
+      },
+      {
+        "label":"Description",
+        "placeholder":"System Name",
+        "class":"systemName",
+        "name":"description"
+      },
+      {
+        "label":"Deployment preparation",
+        "placeholder":"System Name",
+        "class":"systemName",
+        "name":"deployPrep"
+      }
+
+
+    ]
+  }
+}

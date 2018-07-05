@@ -1,0 +1,14 @@
+
+body, html {
+	height: 100%;
+	width: 100%;
+	position: relative;	
+}
+
+body {
+	overflow-x: hidden;
+	overflow-y: auto;
+	&.no-scroll {
+		overflow: hidden;
+	}
+}

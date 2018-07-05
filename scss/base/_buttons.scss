@@ -1,0 +1,37 @@
+
+a {
+	text-decoration: none;
+	color: $black;
+	&:hover {
+		text-decoration: none;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+button {
+	border: none;
+	-webkit-appearance: none;
+	outline: none;
+}
+
+// Use mixins to define button styles
+
+@mixin buttonPrimary() {
+	@include paragraph;
+	text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	padding: 15px 40px;
+	background-color: $black;
+	color: $white;
+	text-decoration: none;
+	border: none;
+	transition: background 150ms ease;
+	&:hover, &:focus {
+		color: $white;
+		background-color: $black;
+		text-decoration: none;
+	}
+}
