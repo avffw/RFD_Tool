@@ -1,56 +1,74 @@
 {
   "tables": [
     {
-      "rdf":{}
+      "rdf": {
+        "rows": [
+          {
+            "title": "System Name"
+          },
+          {
+            "title": "Date and time of execution"
+          },
+          {
+            "title": "Date and time of execution"
+          },
+          {
+            "title": "Coordinator"
+          },
+          {
+            "title": "Cohaesio Staff"
+          },
+          {
+            "title": "Deployment preparation"
+          }
+        ]
+      }
     }
   ],
-
-  "rfdForm":{
-    "inputGroups":[
+  "rfdForm": {
+    "inputGroups": [
       {
-        "label":"System Name",
-        "placeholder":"System Name",
-        "class":"systemName",
-        "name":"systemName"
+        "label": "System Name",
+        "placeholder": "System Name",
+        "class": "systemName",
+        "name": "systemName"
       },
       {
-        "label":"Date and time of execution",
-        "placeholder":"System Name",
-        "class":"systemName",
-        "name":"systemName"
+        "label": "Date and time of execution",
+        "placeholder": "System Name",
+        "class": "systemName",
+        "name": "date"
       },
       {
-        "label":"Downtime of the system",
-        "placeholder":"System Name",
-        "class":"systemName",
-        "name":"systemName"
+        "label": "Downtime of the system",
+        "placeholder": "System Name",
+        "class": "systemName",
+        "name": "downTime"
       },
       {
-        "label":"Coordinator",
-        "placeholder":"System Name",
-        "class":"systemName",
-        "name":"systemName"
+        "label": "Coordinator",
+        "placeholder": "System Name",
+        "class": "systemName",
+        "name": "systemName"
       },
       {
-        "label":"Cohaesio Staff",
-        "placeholder":"System Name",
-        "class":"systemName",
-        "name":"systemName"
+        "label": "Cohaesio Staff",
+        "placeholder": "System Name",
+        "class": "systemName",
+        "name": "systemName"
       },
       {
-        "label":"Description",
-        "placeholder":"System Name",
-        "class":"systemName",
-        "name":"description"
+        "label": "Description",
+        "placeholder": "System Name",
+        "class": "systemName",
+        "name": "description"
       },
       {
-        "label":"Deployment preparation",
-        "placeholder":"System Name",
-        "class":"systemName",
-        "name":"deployPrep"
+        "label": "Deployment preparation",
+        "placeholder": "System Name",
+        "class": "systemName",
+        "name": "deployPrep"
       }
-
-
     ]
   }
 }

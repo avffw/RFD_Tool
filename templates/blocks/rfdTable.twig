@@ -1,42 +1,31 @@
-<table class="table table-responsive table-bordered ">
-    <thead>
-    <tr>
-        <th>{{name}}</th>
-        <th>Table heading</th>
-        <th>Table heading</th>
-        <th>Table heading</th>
-        <th>Table heading</th>
-        <th>Table heading</th>
-        <th>Table heading</th>
-    </tr>
-    </thead>
+<div class="container-fluid tableWrap"><table class="rfdTable table-sm col-7  table-bordered table-striped table-hover hidden ">
+    {#<tr>
+        {% for table in tables %}
+            {% for row in table.rdf.rows %}
+                <th>{{ row.title }}</th>
+            {% endfor %}
+        {% endfor %}
+    </tr>#}
+
     <tbody>
-    <tr>
-        <th scope="row">1</th>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-    </tr>
-    <tr>
-        <th scope="row">2</th>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-    </tr>
-    <tr>
-        <th scope="row">3</th>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-        <td>Table cell</td>
-    </tr>
+    {% for table in tables %}
+        {% for row in table.rdf.rows %}
+            <tr>
+                <th scope="row">{{ row.title }}</th>
+
+            </tr>
+        {% endfor %}
+    {% endfor %}
+
     </tbody>
 </table>
+<div class="tableButtons hidden">
+    <div class=" container-fluid d-flex justify-content-center ">
+        <div class="btn-group btn-group-sm " role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-outline-primary">Edit</button>
+            <button type="button" class="btn btn-outline-primary">Add task</button>
+            <button type="button" class="btn btn-outline-primary">Export PDF</button>
+            <button type="button" class="btn btn-outline-danger">Remove</button>
+        </div>
+    </div>
+</div></div>

@@ -1,20 +1,25 @@
-<form class="rfdForm col-5 card hidden">
+<form class="rfdForm col-4 card hidden">
 
     {% for inputGroup in rfdForm.inputGroups %}
 
         <div class=" form-group d-inline-block {{ inputGroup.class }}">
             <label for="{{ inputGroup.name }}">{{ inputGroup.label }}</label>
             {% if inputGroup.name == 'description' or  inputGroup.name == 'deployPrep' %}
-                <textarea class="form-control" name="{{ inputGroup.name }}" cols="30" rows="10" placeholder="{{ inputGroup.label }}"  ></textarea>
+                <textarea class="form-control" name="{{ inputGroup.name }}" cols="30" rows="10"
+                          placeholder="{{ inputGroup.label }}"></textarea>
+            {% elseif inputGroup.name == 'date' or inputGroup.name == 'downTime' %}
+                <input type="date" class="form-control" name="{{ inputGroup.name }}">
+
             {% else %}
-                <input type="text" class="form-control" name="{{ inputGroup.name }}" placeholder="{{ inputGroup.label }}">
+                <input type="text" class="form-control" name="{{ inputGroup.name }}"
+                       placeholder="{{ inputGroup.label }}">
 
             {% endif %}
 
         </div>
 
     {% endfor %}
-    <button class="btn btn-success submitRdf" type="submit">Save</button>
+    <button class="btn btn-success saveRfd" type="submit">Save</button>
 
 </form>
 {{ rfd }}

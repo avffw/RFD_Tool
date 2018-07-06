@@ -6,13 +6,23 @@ table{
   width: fit-content !important;
   margin-left: 10px;
 }
+.tableWrap{
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .submitRdf{
 }
 
 .rfdForm{
   padding: 20px 0;
+  margin-bottom: 50px;
 
+}
+.tableButtons{
+  margin-top: 20px;
 }
 
 .hidden{
