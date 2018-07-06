@@ -1,3 +1,6 @@
 .idea/*
 .npm/node_modules
 index.html
+.npm/package-lock.json
+css/
+js/script.min.js
